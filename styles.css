@@ -1,0 +1,280 @@
+.body{
+    height: 3000px;
+    overflow-x: hidden;
+}
+
+
+.header_tab{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    margin: -8px;
+    padding: 0px;
+    z-index: 10;
+    display: grid;
+    background-color: rgb(175, 133, 198);
+    opacity: 1;
+    
+}
+
+
+.main_div{
+    display: grid;
+
+}
+
+.page1{
+    position: relative;
+    width: 101%;
+    height: 100%;
+    margin: -8px;
+    padding: 0px;
+    display: grid;
+    overflow: hidden;
+    background-color: rgba(249, 213, 255, 0.592);
+
+}
+
+.banner{
+    position: relative;
+    cursor: pointer;
+    top: 40px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.Watch1,.Watch2,.Watch3,.Laptop1,.Laptop2,.Laptop3{
+    position: relative;
+    width: 300px;
+    top: 0px;
+    object-fit: contain;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.Watch2{
+    height: 300px;
+    object-fit: fill;
+}
+
+.Watch{
+    position: relative;
+    left: -380px;
+    translate:50vw 0px;
+    z-index: 3;
+    background-color: white;
+    width: 300px;
+    height: 650px;
+    overflow-y: hidden;
+    top: 60px;
+}
+
+.Watch1{
+    opacity: 1;
+    z-index: 3;
+}
+
+.Watch2{
+    position: relative;
+    z-index: 2;
+    left: 0px;
+    top:-305px;
+    opacity: 0;
+}
+
+.Watch3{
+    position: relative;
+    z-index: 1;
+    left: 0px;
+    top:-600px;
+    opacity: 0;
+}
+
+.Laptop{
+    position: relative;
+    left: 100px;
+    z-index: 3;
+    translate:50vw 0px;
+    background-color: white;
+    width: 300px;
+    height: 650px;
+    overflow-y: hidden;
+    top: -590px;
+}
+
+.Laptop1{
+    opacity: 0;
+}
+
+.Laptop2{
+    position: relative;
+    left: -304px;
+    left:0px;
+    top:-300px;
+    z-index: 2;
+    opacity: 1;
+}
+.Laptop3{
+    position: relative;
+    left: 0px;
+    top:-600px;
+    z-index: 1;
+    opacity: 1;
+}
+
+.header_tab{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.slide_l{
+    position: relative;
+    cursor: pointer;
+    height: 70px;
+    left: 5px;
+    width: 50px;
+    color: white;
+    background-color: grey;
+    filter: drop-shadow(0px 0px 4px black );
+    border-color: transparent;
+    font-size: 60px;
+    top: -715px;
+    z-index: 10;
+    transition: 0.2s ease-in-out;
+}
+
+.slide_r{
+    position: relative;
+    cursor: pointer;
+    height: 70px;
+    left: 190px;
+    width: 50px;
+    color: white;
+    background-color: grey;
+    filter: drop-shadow(0px 0px 4px black );
+    border-color: transparent;
+    font-size: 60px;
+    top: -715px;
+    transition: 0.2s ease-in-out;
+}
+
+.slide_l2{
+    position: relative;
+    cursor: pointer;
+    height: 70px;
+    left: 8px;
+    width: 50px;
+    color: white;
+    background-color: grey;
+    filter: drop-shadow(0px 0px 4px black );
+    border-color: transparent;
+    font-size: 60px;
+    top: -720px;
+    transition: 0.2s ease-in-out;
+}
+
+.slide_r2{
+    position: relative;
+    cursor: pointer;
+    height: 70px;
+    left: 187px;
+    width: 50px;
+    color: white;
+    background-color: grey;
+    filter: drop-shadow(0px 0px 4px black );
+    border-color: transparent;
+    font-size: 60px;
+    top: -720px;
+    transition: 0.2s ease-in-out;
+}
+
+.learn_more{
+    position: relative;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 30px;
+    border-color: transparent;
+    background-color:#b875b8;
+    color:white;
+    filter: drop-shadow(0px 0px 5px rgb(135, 135, 135));
+    font-size: 15px;
+    top: -690px;
+    left: 70px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 50px;
+}
+
+.learn_more2{
+    position: relative;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 30px;
+    border-color: transparent;
+    filter: drop-shadow(0px 0px 5px rgb(135, 135, 135));
+    background-color:#b875b8;
+    color:white; 
+    font-size: 15px;
+    top: -660px;
+    left: 67px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 50px;
+}
+
+
+.slide_l:hover,.slide_l2:hover,.slide_r:hover,.slide_r2:hover{
+    transform: scale(1.05);
+}
+
+.watch_title{
+    position:relative;
+    top:-620px;
+    width:120px;
+    margin-left:85px;
+    text-align:center;
+    font-family:cursive;
+}
+
+.desc_watch{
+    position:relative;
+    top:-700px;
+    width:270px;
+    left:10px;
+    text-align:center;
+}
+
+.laptop_title{
+    position:relative;
+    top:-620px;
+    width:120px;
+    margin-left:85px;
+    text-align:center;
+    font-family:cursive;
+}
+
+.desc_laptop{
+    position:relative;
+    top:-700px;
+    width:270px;
+    left:10px;
+    text-align:center;
+}
+
+@media screen and (max-width:850px){
+    .Watch{
+        transform:translate(230px,-200px)
+    }
+    .Laptop{
+        transform:translate(-250px,300px)
+    }
+    .page1{
+        height: 150%;
+    }
+}
+
+
+
+
+
+
