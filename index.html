@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Cards For Shopping Of Watch And Laptop</title>
+    <meta name="description" content="Discover our stylish watches and powerful laptops. Stay on time and productive with designs that suit your style and needs. Shop now for the perfect watch or laptop">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script href="./script.js"></script>
+</head>
+<body bgcolor="pink">
+    <div class="main_div" >
+        <div class="header_tab">
+            <h1 class="test_header">This Is A Test Header</h1>
+        </div>
+        <div class="page1">
+        <a href="https://www.flipkart.com/"><img src="./public/banner.jpeg" class="banner"></a>
+        <div class="Watch">
+            <img src="./public/Watch1.webp" style="opacity: 1;" class="Watch1" id="Watch1">
+            <img src="./public/Watch12.webp" style="opacity: 0;" class="Watch2" id="Watch2">
+            <img src="./public/Watch3.webp" style="opacity: 0;" class="Watch3" id="Watch3">
+            <h3 class="watch_title">Google Pixel Watch 2 Smartwatch </h3>
+            <button class="slide_l" onclick="Slide_B()" ><</button>
+            <button class="slide_r" onclick="Slide_F()" >></button>
+            <p class="desc_watch">The Pixel Watch 2 is engineered by Google to deliver personalised health, fitness, safety and productivity so you can get the most out of your day. An all-new multi-path heart-rate sensor and Google AI deliver our most advanced heart-rate tracking.</p>
+            <button class="learn_more" onclick="Learn_More_Watch()">Learn More...</button>
+        </div>
+        <div class="Laptop">
+            <img src="./public/Laptop1.png" style="opacity: 0;" class="Laptop1" id="Laptop1">
+            <img src="./public/Laptop2.png" style="opacity: 0;" class="Laptop2" id="Laptop2">
+            <img src="./public/Laptop3.png" style="opacity: 1;" class="Laptop3" id="Laptop3">
+            <h3 class="laptop_title">Asus Zenbook Pro 14 Duo</h3>
+            <button class="slide_l2" onclick="Slide_B_Lap()" ><</button>
+            <button class="slide_r2" onclick="Slide_F_Lap()" >></button>
+            <p class="desc_laptop">Two screens and a fast CPU. Asus has retained the dual-screen concept with the new Zenbook Pro 14 Duo that features a fast 120 Hz OLED display and a new Alder Lake H processor from Intel.</p>
+            <button class="learn_more2" onclick="Learn_More_Laptop()">Learn More...</button>
+        </div>
+        </div>
+    </div>
+    <script>
+        function Learn_More_Watch(){
+            window.location.href = "https://www.gsmarena.com/google_pixel_watch_2-12547.php#:~:text=Google%20Pixel%20Watch%202%20Android%20watch.%20Announced%20Oct,storage%2C%202%20GB%20RAM%2C%20Corning%20Gorilla%20Glass%205."
+        }
+
+        function Learn_More_Laptop(){
+            window.location.href = "https://www.asus.com/us/laptops/for-home/all-series/zenbook-pro-14-duo-oled-ux8402/"
+        }
+
+
+        function Slide_F(){
+            const watch1 = document.getElementById('Watch1');
+            const watch2 = document.getElementById("Watch2");
+            const watch3 = document.getElementById("Watch3");
+            if(watch2.style.opacity != "1" && watch3.style.opacity != "1"){
+                watch1.style.opacity = "0";
+                watch2.style.opacity = "1";
+            }
+            else if(watch3.style.opacity != "1"){
+                watch2.style.opacity = "0";
+                watch3.style.opacity = "1"
+            }
+            else{
+                watch1.style.opacity = "1"
+                watch2.style.opacity = "0";
+                watch3.style.opacity = "0";
+            }
+        }
+
+        function Slide_F_Lap(){
+            const laptop1 = document.getElementById('Laptop1');
+            const laptop2 = document.getElementById("Laptop2");
+            const laptop3 = document.getElementById("Laptop3");
+            if(laptop2.style.opacity != "1" && laptop3.style.opacity != "1"){
+                laptop1.style.opacity = "0";
+                laptop2.style.opacity = "1";
+            }
+            else if(laptop3.style.opacity != "1"){
+                laptop2.style.opacity = "0";
+                laptop3.style.opacity = "1"
+            }
+            else{
+                laptop1.style.opacity = "1"
+                laptop2.style.opacity = "0";
+                laptop3.style.opacity = "0";
+            }
+        }
+
+        function Slide_B(){
+            const watch1 = document.getElementById('Watch1');
+            const watch2 = document.getElementById("Watch2");
+            const watch3 = document.getElementById("Watch3");
+
+            
+
+            if (watch1.style.opacity === "1" && watch3.style.opacity === "0" ) {
+        watch1.style.opacity = "0";
+        watch3.style.opacity = "1";
+        } 
+        
+        else if (watch3.style.opacity === "1"  ) {
+        watch3.style.opacity = "0";
+        watch2.style.opacity = "1";
+        } 
+        else {
+            watch2.style.opacity = "0";
+            watch1.style.opacity = "1";
+        }
+
+        }
+
+        function Slide_B_Lap(){
+            const laptop1 = document.getElementById('Laptop1');
+            const laptop2 = document.getElementById("Laptop2");
+            const laptop3 = document.getElementById("Laptop3");
+
+            
+
+            if (laptop1.style.opacity === "1" && laptop3.style.opacity === "0" ) {
+        laptop1.style.opacity = "0";
+        laptop3.style.opacity = "1";
+        } 
+        
+        else if (laptop3.style.opacity === "1"  ) {
+        laptop3.style.opacity = "0";
+        laptop2.style.opacity = "1";
+        } 
+        else {
+            laptop2.style.opacity = "0";
+            laptop1.style.opacity = "1";
+        }
+
+        }
+    </script>
+</body>
+</html>
